@@ -1,31 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Highlighted2Email",
+  "name": "Email2MeNow",
   "version": "1.0",
-  "description": "Description of your extension",
-  "icons": {
-    "16": "favicon-16x16.png",
-    "32": "favicon-32x32.png",
-    "48": "favicon48.png",
-    "128": "favicon128.png"
-  },
-  "action": {
-    "default_popup": "main.html",
-    "default_icon": {
-      "16": "favicon-16x16.png",
-      "32": "favicon-32x32.png",
-      "48": "favicon48.png",
-      "128": "favicon128.png"
-    }
-  },
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
+  "permissions": ["contextMenus"],
   "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": [
-    "activeTab"
-  ]
+      "service_worker": "background.js"
+  }
 }
